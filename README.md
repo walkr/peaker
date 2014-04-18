@@ -12,5 +12,3 @@ peaker
 
 ```
 * then point your browser to localhost:3000/
-
-Cheers.
