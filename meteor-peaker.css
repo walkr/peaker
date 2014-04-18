@@ -1,0 +1,171 @@
+html{
+    height: 100%;
+}
+body{
+    background: #222222;
+    color: #ddd;
+    font-family: "Ubuntu-Light", "Ubuntu", "HelveticaNeue-Light", Arial;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100%;
+}
+::-webkit-input-placeholder {
+   color: #fff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #fff;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;
+}
+
+:-ms-input-placeholder {
+   color: #fff;
+}
+a, p, div, h1, pre{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a{
+    color: inherit;
+}
+
+.left{
+    float: left;
+}
+.center{
+    margin: 0 auto;
+    text-align: center;
+}
+.right{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.sep{
+    padding: 0 10px;
+}
+#wrapper{
+    margin: 0 auto;
+    padding: 20px;
+    /*border: solid red 1px;*/
+    min-height: 100%;
+}
+.header{
+    font-size: 24px;
+    font-weight: lighter;
+}
+.header .status{
+    font-size: 14px;
+    margin-left: 7px;
+}
+.header .status-online{
+    color: #66B132;
+}
+.header .status-offline{
+    color: #FE4940;
+}
+.content{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#toggle-console{
+    color: #66B132;
+    margin-left: 7px;
+    font-size: 14px;
+}
+.online, .code-200{
+    background: #66B132;
+}
+.offline, .code-404, .code-500, .code-503{
+    background: #FE4940;
+}
+.nodes {
+    margin: 0 auto;
+    text-align: left;
+}
+.nodes .node{
+    padding: 20px;
+    margin: 2px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    border-radius: 2px;
+}
+.nodes .node .node-deleter{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.3);
+    display: none;
+}
+.nodes .node .node-deleter:hover{
+    cursor: pointer;
+}
+.nodes .node .node-address{
+    font-size: 32px;
+}
+.nodes .node .node-info{
+    margin-top: 5px;
+}
+
+#interact{
+    display: none;
+    width: 100%;
+    min-height: 68px;
+    background: #00BAFB;
+    color: white;
+    box-shadow: inset 0 0 7px black;
+    font-size: 18px;
+}
+#interact .inner{
+    padding: 20px;
+}
+#interact .inner input{
+    color: white;
+    background: rgba(0,0,0,0);
+    border: 0;
+    font-size: 18px;
+    width: 70%;
+    -webkit-font-smoothing: antialiased;
+}
+#interact .inner input:focus{
+    outline: none;
+}
+#interact #cli-result pre{
+    overflow-wrap: break-word;
+    font-family: Monaco;
+    font-size: 13px;
+}
+
+@media (max-width: 650px) {
+
+    #wrapper{
+        padding: 10px;
+    }
+    #current-time{
+        display: none;
+    }
+    .nodes .node {
+        padding: 20px;
+        text-align: left;
+        display: block;
+        float: none;
+    }
+    .nodes .node .node-address{
+        font-size: 28px !important;
+    }
+    .boxes .box {
+        display: block;
+        float: none;
+        padding: 30px;
+        margin-top: 4px;
+    }
+
+}

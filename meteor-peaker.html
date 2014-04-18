@@ -1,0 +1,55 @@
+<head>
+    <title>Peaker - Monitoring App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+</head>
+<body>
+    {{> cli}}
+    <div id="wrapper">
+        {{> header}}
+        <div class="content">
+            {{> nodes}}
+        </div>
+    </div>
+</body>
+
+<template name="cli">
+<div id="interact">
+    <div class="inner">
+        <div>
+            <input type="text" id="cli" placeholder="Enter node address">
+        </div>
+        <div id="cli-result"><pre></pre></div>
+    </div>
+</div>
+</template>
+
+<template name="header">
+<div class="header">
+    <div class="left" id="name">
+        Peaker <a id="toggle-console" href="#">show console</a>
+    </div>
+    <div class="right" id="current-time"></div>
+    <div class="clear"></div>
+</div>
+</template>
+
+<template name="nodes">
+<div class="nodes">
+    {{# each nodes}}
+    {{> node}}
+    {{/each}}
+    <div class="clear"></div>
+</div>
+</template>
+
+<template name="node">
+<a class="node box {{status}}" href="#">
+<div class="node-deleter">X</div>
+<div class="node-address">{{address}}</div>
+<div class="node-info">
+    <div class="left">{{status}}</div>
+    <div class="right">{{timestamp}}</div>
+    <div class="clear"></div>
+</div>
+</a>
+</template>
