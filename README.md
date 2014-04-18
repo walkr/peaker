@@ -1,6 +1,6 @@
 peaker
 ======
-(Trying out meter) — a petite dashboard for checking the health of your sites (HTTP).
+(Trying out meteor) — a petite dashboard for checking the health of your sites (HTTP).
 
 
 # install
