@@ -6,7 +6,7 @@ peaker
 # install
 
 ```bash
-	> git clone github.com/walkr/peaker
+	> git clone https://github.com/walkr/peaker.git
 	> cd peaker
 	> meteor
 
